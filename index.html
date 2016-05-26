@@ -4,14 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>GDG Duque de Caxias - Python vs Ruby</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+        <link rel="shortcut icon" href="./favicon.ico" />
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -22,10 +22,41 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
+		<div class="reveal default center">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+                    <h3>Bem vindos!</h3>
+                    <img src="./img/logo-python.png" class="" style="border:none" width="150px"/>
+                    <img src="./img/gdg-logo-program.png" class="circle" style="border:none" width="150px" height="150px"/>
+                    <img src="./img/ruby.png" class="" style="border:none" width="150px"/>
+                    <h2>GDG Duque de Caxias</h2>
+                    <h3>Python vs Ruby?</h3>
+                    <p>
+                        <small><a href="http://gdgduquedecaxias.github.io/">GDG Duque de Caxias</a></small>
+                    </p>
+                    <p>
+                        <small>Apresentação criada por <a href="https://www.facebook.com/lucas.trindade.71697">Lucas Trindade</a></small>
+                        <br>
+                        <small><a href="http://github.com/gdgduquedecaxias/slide-materialize">Disponível online</a></small>
+                    </p>
+                </section>
+				<section>
+                    <h3>Por que usar Python?</h3>
+                    <ul>
+                        <li>Mais objetiva.</li>
+                        <li>Python trabalha de maneira mais explicita, dificultando menos a interface para o usuário.</li>
+                        <li>Tem como web framework mais famoso o Django.</li>
+                        <li>O Django tem como vantagem o seu sistema de organização em que obriga você trabalhar apenas de uma maneira, sem fugir do padrão.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Por que usar Ruby?</h3>
+                    <ul>
+                        <li>Mais mágica.</li>
+                        <li>Ruby oferece uma flexibilidade e um empoderamento para os programadores. E permite que o Rails faça pequenos truques transformando ele em um framework web elegante.</li>
+                        <li>Tem como web framework mais famoso o Rails.</li>
+                    </ul>
+                </section>
 			</div>
 		</div>
 
@@ -36,7 +67,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-
+                 transition: Reveal.getQueryHash().transition || 'concave',
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
